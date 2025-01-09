@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Diary</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Mood Diary</h1>
+      <p>Track your emotions, reflect, and take on fun challenges to boost your mood.</p>
+      <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section class="mood-entry">
+        <h2>Log Your Mood</h2>
+        <div class="mood-scale">
+          <label>
+            <input type="radio" name="mood" value="happy">
+            <span class="mood-icon">😊</span>
+          </label>
+          <label>
+            <input type="radio" name="mood" value="neutral">
+            <span class="mood-icon">😐</span>
+          </label>
+          <label>
+            <input type="radio" name="mood" value="sad">
+            <span class="mood-icon">😢</span>
+          </label>
+          <label>
+            <input type="radio" name="mood" value="angry">
+            <span class="mood-icon">😡</span>
+          </label>
+          <label>
+            <input type="radio" name="mood" value="anxious">
+            <span class="mood-icon">😰</span>
+          </label>
+        </div>
+
+        <textarea id="thoughts" placeholder="What happened today?"></textarea>
+        <button id="logMood">Log Mood</button>
+        <button id="resetData">Reset Data</button>
+        <button id="exportCSV">Export to CSV</button>
+      </section>
+
+      <section class="mood-challenges">
+        <h2>Mood Challenges</h2>
+        <p id="challengeText">Click below for a random challenge to brighten your day!</p>
+        <button id="generateChallenge">Get Challenge</button>
+      </section>
+
+      <section class="affirmation">
+        <h2>Daily Affirmation</h2>
+        <p id="affirmationText">Your affirmation will appear here after logging a mood.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>Created by Muddu</small>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
